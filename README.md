@@ -12,6 +12,75 @@ of the store. A single model could handle, for instance,
 user authentication, a to-do-list, a shopping cart or anything else you
 can imagine.
 
+### Hello World
+
+```
+// In createStore.js
+
+import { loadModels, modelReducer, connectModelsToStore } from 'react-models'
+import models from './models/index'
+
+const store = createStore(
+        combineReducers(modelReducer, otherReducers),
+        initialState
+        sagaMiddleware
+    )
+connectModelsToStore(store, sagaMiddleware, history)
+loadModels(models)
+
+// In model
+
+export default{
+    namespace: 'todo',
+    reducers: {
+        add: function(action, state){
+            return { ...state, list: state.todo.list.concat([
+                { 
+                    id: state.todo.list.length,
+                    title: action.payload
+                }
+            ]}
+        },
+        remove: function(action, state){
+            return { ...state, list: state.todo.list.filter(
+                item => item.id!==action.payload
+        }
+    }
+    
+// In component
+import { connectWithModels } from 'react-models'
+
+class TodoList extends React.Component{
+
+    handleSubmit = e => {
+        e.preventDefault()
+        const title = ReactDOM.findDOMNode(this._title).value;
+        this.models.todo.add(title)
+    }
+    
+    render(){
+        return (
+            <div className={this.props.className}>
+                <h1>Todo list</h1>
+                <form onSubmit={this.handleSubmit}>
+                    <input ref={nameInput => this._title }
+                <form>
+                <ul>
+                { props.todo.list.map(item => (
+                    <li>
+                        <strong>{item.title}</strong>
+                        <a onClick={props.model.todo.remove(item.id)}
+                    </li>
+                )}
+                </ul>
+            </div>
+        )
+    }
+)
+
+export default connectWithModels(['auth'])(TodoList)
+```
+
 ### Dynamic, HMR-powered, and transferrable
 
 Models can be loaded and unloaded dynamically. They work with hot module reloading.
