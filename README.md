@@ -56,10 +56,10 @@ class TodoList extends React.Component{
                     <button onSubmit={handleSubmit}>Add</button>
                 <form>
                 <ul>
-                { props.todo.list.map(item => (
+                { this.props.todo.list.map(item => (
                     <li>
                         <strong>{item.title}</strong>
-                        <a onClick={props.model.todo.remove(item.id)}>
+                        <a onClick={this.props.model.todo.remove(item.id)}>
                             Remove
                         </a>
                     </li>
