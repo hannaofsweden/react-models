@@ -12,11 +12,15 @@ of the store. A single model could handle, for instance,
 user authentication, a to-do-list, a shopping cart or anything else you
 can imagine.
 
-### Hello World
+## Installation
+
+```$xslt
+npm install --save react-models
+```
+
+## Redux store setup
 
 ```
-// In createStore.js
-
 import { loadModels, modelReducer, connectModelsToStore } from 'react-models'
 import models from './models/index'
 
@@ -27,7 +31,11 @@ const store = createStore(
     )
 connectModelsToStore(store, sagaMiddleware, history)
 loadModels(models)
+```
 
+### Hello World: the old to-do-list example
+
+```
 // In model
 
 export default{
@@ -63,13 +71,16 @@ class TodoList extends React.Component{
             <div className={this.props.className}>
                 <h1>Todo list</h1>
                 <form onSubmit={this.handleSubmit}>
-                    <input ref={nameInput => this._title }
+                    <input ref={nameInput => this._title }/>
+                    <button onSubmit={handleSubmit}>Add</button>
                 <form>
                 <ul>
                 { props.todo.list.map(item => (
                     <li>
                         <strong>{item.title}</strong>
-                        <a onClick={props.model.todo.remove(item.id)}
+                        <a onClick={props.model.todo.remove(item.id)}>
+                            Remove
+                        </a>
                     </li>
                 )}
                 </ul>
@@ -93,12 +104,6 @@ In addition to the common Redux functions, react-models introduces Redux-aware
 subscriptions. Subscriptions are functions that watch something for changes.
 Common usages include watching for URL changes and dispatching Redux actions in
 response to them, listening to keyboard events, and listening to Socket.io events.
-
-## Installation
-
-```$xslt
-npm install --save react-models
-```
 
 ## Tests
 
