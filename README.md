@@ -12,12 +12,6 @@ of the store. A single model could handle, for instance,
 user authentication, a to-do-list, a shopping cart or anything else you
 can imagine.
 
-## Installation
-
-```$xslt
-npm install --save react-models
-```
-
 ### Hello World: the old to-do-list example
 
 ```
@@ -75,6 +69,12 @@ class TodoList extends React.Component{
 )
 
 export default connectWithModels(['auth'])(TodoList)
+```
+
+## Installation
+
+```$xslt
+npm install --save react-models
 ```
 
 ## Redux store setup
