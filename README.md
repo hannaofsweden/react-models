@@ -68,7 +68,7 @@ class TodoList extends React.Component{
     }
 )
 
-export default connectWithModels(['auth'])(TodoList)
+export default connectWithModels(['todo'])(TodoList)
 ```
 
 ## Installation
