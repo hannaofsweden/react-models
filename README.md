@@ -12,6 +12,12 @@ of the store. A single model could handle, for instance,
 user authentication, a to-do-list, a shopping cart or anything else you
 can imagine.
 
+Actions in models are namespaced, so that you can have an 'add' or 'remove' action
+in all of your models without issues. The actions get the model namespace as a prefix - 
+for instance, in the below example, the actions are `todo/add` and `todo/remove`.
+
+Action creators are created automatically for reducers or effects without an explicit action.
+
 ### Hello World: the old to-do-list example
 
 Model:
@@ -72,6 +78,14 @@ class TodoList extends React.Component{
 
 export default connectWithModels(['todo'])(TodoList)
 ```
+The connectWithModels higher order component is entirely optional. 
+
+You can also dispatch actions using:
+```
+dispatch( { type: 'todo/add }, payload: 'Buy milk' } )
+```
+The todo list will live in state/todo and can be accessed using a regular mapStateToProps
+if you do not use connectWithModels.
 
 ## Installation
 
