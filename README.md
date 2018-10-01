@@ -12,32 +12,6 @@ of the store. A single model could handle, for instance,
 user authentication, a to-do-list, a shopping cart or anything else you
 can imagine.
 
-### Dynamic, HMR-powered, and reusable
-
-Models can be loaded and unloaded dynamically. They work with hot module reloading.
-They can easily be transfered between projects - for instance, you could write an
-auth module that can be used in all of your company's project.
-
-### Namespacing
-
-Actions in models are namespaced, so that you can have an 'add' or 'remove' action
-in all of your models without issues. The actions get the model namespace as a prefix - 
-for instance, in the below example, the actions are `todo/add` and `todo/remove`.
-
-Namespacing removes the need for constants to keep action type names constant between
-different parts of the code.
-
-### Implicit action creator
-
-Action creators are created automatically for reducers or effects without an explicit action.
-This removes the need for much of the boilerplate action creators that simply dispatch plain actions.
-
-### Default 'update' reducer created automatically
-
-Many reducers simply put the action payload in the store state. With react-models,
-an 'update' reducer (and corresponding action creator) is created by default, thus
-eliminating much boilerplate code.
-
 ### Hello World: the old to-do-list example
 
 Model:
@@ -106,6 +80,32 @@ dispatch( { type: 'todo/add }, payload: 'Buy milk' } )
 ```
 The todo list will live in state/todo and can be accessed using a regular mapStateToProps
 if you do not use connectWithModels.
+
+### Dynamic, HMR-powered, and reusable
+
+Models can be loaded and unloaded dynamically. They work with hot module reloading.
+They can easily be transfered between projects - for instance, you could write an
+auth module that can be used in all of your company's project.
+
+### Namespacing
+
+Actions in models are namespaced, so that you can have an 'add' or 'remove' action
+in all of your models without issues. The actions get the model namespace as a prefix - 
+for instance, in the below example, the actions are `todo/add` and `todo/remove`.
+
+Namespacing removes the need for constants to keep action type names constant between
+different parts of the code.
+
+### Implicit action creator
+
+Action creators are created automatically for reducers or effects without an explicit action.
+This removes the need for much of the boilerplate action creators that simply dispatch plain actions.
+
+### Default 'update' reducer created automatically
+
+Many reducers simply put the action payload in the store state. With react-models,
+an 'update' reducer (and corresponding action creator) is created by default, thus
+eliminating much boilerplate code.
 
 ## Installation
 
