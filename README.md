@@ -18,21 +18,6 @@ can imagine.
 npm install --save react-models
 ```
 
-## Redux store setup
-
-```
-import { loadModels, modelReducer, connectModelsToStore } from 'react-models'
-import models from './models/index'
-
-const store = createStore(
-        combineReducers(modelReducer, otherReducers),
-        initialState
-        sagaMiddleware
-    )
-connectModelsToStore(store, sagaMiddleware, history)
-loadModels(models)
-```
-
 ### Hello World: the old to-do-list example
 
 ```
@@ -90,6 +75,21 @@ class TodoList extends React.Component{
 )
 
 export default connectWithModels(['auth'])(TodoList)
+```
+
+## Redux store setup
+
+```
+import { loadModels, modelReducer, connectModelsToStore } from 'react-models'
+import models from './models/index'
+
+const store = createStore(
+        combineReducers(modelReducer, otherReducers),
+        initialState
+        sagaMiddleware
+    )
+connectModelsToStore(store, sagaMiddleware, history)
+loadModels(models)
 ```
 
 ### Dynamic, HMR-powered, and transferrable
