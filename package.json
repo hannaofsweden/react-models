@@ -1,0 +1,28 @@
+{
+  "name": "react-models",
+  "version": "1.0.0",
+  "description": "Boilerplate-less Redux",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cypress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannaofsweden/react-models.git"
+  },
+  "author": "Johanna Johansson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hannaofsweden/react-models/issues"
+  },
+  "homepage": "https://github.com/hannaofsweden/react-models#readme",
+  "devDependencies": {
+    "cypress": "^3.1.0",
+    "react": "^16.5.2",
+    "redux": "^4.0.0",
+    "webpack": "^4.20.2"
+  }
+}
