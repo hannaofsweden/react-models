@@ -93,8 +93,14 @@ const store = createStore(
 connectModelsToStore(store, sagaMiddleware, history)
 loadModels(models)
 ```
+* A modelReducer is exported that contains the reducers of all models
+(updated as models are loaded and unloaded)
+* connectModelsToStore can be called without sagaMiddleware or history too.
+If sagaMiddleware is not specified, effects will not work.
+If history is not specified, models will not have access to the history object.
+* loadModels can be called later as well - however, be careful if components have dependencies on one another.
 
-### Dynamic, HMR-powered, and transferrable
+### Dynamic, HMR-powered, and reusable
 
 Models can be loaded and unloaded dynamically. They work with hot module reloading.
 They can easily be transfered between projects - for instance, you could write an
