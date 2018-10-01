@@ -14,8 +14,8 @@ can imagine.
 
 ### Hello World: the old to-do-list example
 
+Model:
 ```
-// In model
 
 export default{
     namespace: 'todo',
@@ -34,7 +34,9 @@ export default{
         }
     }
     
-// In component
+```
+To use this in a component:
+```
 import { connectWithModels } from 'react-models'
 
 class TodoList extends React.Component{
