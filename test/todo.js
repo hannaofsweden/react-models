@@ -1,5 +1,24 @@
 import {connectWithModels} from '../src/connectWithModels'
 
+const todoModel = {
+    namespace: 'todo',
+    reducers: {
+        add: function(action, state){
+            return { ...state, list: state.todo.list.concat([
+                    {
+                        id: state.todo.list.length,
+                        title: action.payload
+                    }
+                ])}
+        },
+        remove: function(action, state){
+            return { ...state, list: state.todo.list.filter(
+                    item => item.id!==action.payload
+            }
+        }
+    }
+}
+
 class TodoList extends React.Component {
     handleSubmit = e => {
         e.preventDefault()

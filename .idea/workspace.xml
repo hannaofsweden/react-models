@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c24d6c-78e2-47c3-9761-2f4145a257d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/todo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,14 +38,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="56" />
-          <entry key="md" value="5092" />
+          <entry key="js" value="80" />
+          <entry key="md" value="5097" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="56" />
-          <entry key="Markdown" value="5092" />
+          <entry key="JavaScript" value="80" />
+          <entry key="Markdown" value="5097" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
@@ -64,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/todo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="30" selection-end-column="1" />
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -74,8 +70,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="394">
-                <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+              <first_editor relative-caret-position="341">
+                <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
               </first_editor>
               <second_editor />
             </state>
@@ -228,24 +224,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538393932053</updated>
-      <workItem from="1538393933396" duration="6494000" />
+      <workItem from="1538393933396" duration="6622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6494000" />
+    <option name="totallyTimeSpent" value="6622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21805702" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21805702" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Quokka" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.31712472" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.31712472" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -330,16 +326,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/todo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="30" selection-end-column="1" />
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="394">
-            <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="69" selection-end-column="1" />
+          <first_editor relative-caret-position="341">
+            <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>

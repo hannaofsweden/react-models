@@ -22,18 +22,19 @@ export default{
     reducers: {
         add: function(action, state){
             return { ...state, list: state.todo.list.concat([
-                { 
-                    id: state.todo.list.length,
-                    title: action.payload
-                }
-            ]}
+                    {
+                        id: state.todo.list.length,
+                        title: action.payload
+                    }
+                ])}
         },
         remove: function(action, state){
             return { ...state, list: state.todo.list.filter(
-                item => item.id!==action.payload
+                    item => item.id!==action.payload
+            }
         }
     }
-    
+}
 ```
 To use this in a component:
 ```
