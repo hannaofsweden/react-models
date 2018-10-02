@@ -68,7 +68,7 @@ class TodoList extends React.Component{
             </div>
         )
     }
-)
+}
 
 export default connectWithModels(['todo'])(TodoList)
 ```
@@ -96,7 +96,7 @@ for instance, in the below example, the actions are `todo/add` and `todo/remove`
 Namespacing removes the need for constants to keep action type names constant between
 different parts of the code.
 
-### Implicit action creator
+### Implicit action creators
 
 Action creators are created automatically for reducers or effects without an explicit action.
 This removes the need for much of the boilerplate action creators that simply dispatch plain actions.
