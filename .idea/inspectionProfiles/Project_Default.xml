@@ -541,8 +541,8 @@
     <inspection_tool class="SillyAssignmentJS" enabled="true" level="WARNING" enabled_by_default="true">
       <scope name="Scratches and Consoles" level="WARNING" enabled="false" />
     </inspection_tool>
-    <inspection_tool class="StandardJS" enabled="false" level="ERROR" enabled_by_default="false">
-      <scope name="Scratches and Consoles" level="ERROR" enabled="false" />
+    <inspection_tool class="StandardJS" enabled="true" level="ERROR" enabled_by_default="true">
+      <scope name="Scratches and Consoles" level="ERROR" enabled="true" />
     </inspection_tool>
     <inspection_tool class="StatementsPerFunctionJS" enabled="false" level="WARNING" enabled_by_default="false">
       <scope name="Scratches and Consoles" level="WARNING" enabled="false">
